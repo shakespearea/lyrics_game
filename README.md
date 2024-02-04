@@ -1,16 +1,31 @@
 # Lyrics Quiz Game
 
 ## Aim
-This repo is dedicated to the development of a game that gets players to guess statistics based questions of popular games.
+This repo is dedicated to the development of a game that gets players to guess statistics-based questions of popular games.
 
 Lyrics of popular songs are to be scraped from the internet and then these will be analysed and used to generate quiz questions.
 
-Example Quesitons: 
+Example Questions: 
   - How many times does the word "imagine" appear in the song 'Imagine' by John Lennon?
   - Is the word "love" mentioned more times in the song 'Crazy Little Thing Called Love' by Queen or in 'What is Love' by Haddaway?
 
 ## Build Instructions
-(tbc)
+1. Clone the repository (or download)
+```bash
+git clone https://github.com/shakespearea/lyrics_game.git
+```
+2. Install the required modules
+```bash
+pip install requests beautifulsoup4
+pip install lxml
+pip install python-dotenv
+```
+3. Generate a (free) API key for Genius at:
+   http://genius.com/api-clients
+4. Paste the "Client access token" into [`GENIUS_API_KEY.env`](./source/GENIUS_API_KEY.env):
+```
+GENIUS_API_KEY=paste-your-api-key-here
+```
 
 ---
 DISCLAIMER:
