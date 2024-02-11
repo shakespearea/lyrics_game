@@ -16,6 +16,13 @@ def scrape_song_lyrics(url_list):
     print(f"\n{line_count} song titles found and written to song_list.txt")
     return True
 
+# Reverses the order of lines in the file
+def reverse_line_order(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        lines = file.readlines()
+    with open(file_path, "w", encoding="utf-8") as file:
+        file.writelines(reversed(lines))
+
 # As the webpage for the Rolling Stones is dynamically generated, 
 # the most straight-forward solution to getting the full list was to request each page indiviually.
 # Each url corresponds to 50 songs: 500-451, 450 - 401, etc.
@@ -30,3 +37,6 @@ rs_top_500_2021 = ["https://www.rollingstone.com/music/music-lists/best-songs-of
                    "https://www.rollingstone.com/music/music-lists/best-songs-of-all-time-1224767/bob-dylan-blowin-in-the-wind-3-1225238/",
                    "https://www.rollingstone.com/music/music-lists/best-songs-of-all-time-1224767/daddy-yankee-feat-glory-gasolina-1225288/"]
 scrape_song_lyrics(rs_top_500_2021)
+
+# Reverse line order to order songs 1-500
+reverse_line_order("song_list.txt")
