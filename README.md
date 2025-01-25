@@ -1,7 +1,7 @@
 # Lyrics Quiz Game
 
 ## Aim
-This repo is dedicated to the development of a game that gets players to guess statistics-based questions of popular games.
+This repo is dedicated to the development of a game that gets players to guess statistics-based questions for popular song lyrics.
 
 Lyrics of popular songs are to be scraped from the internet and then these will be analysed and used to generate quiz questions.
 
@@ -27,12 +27,17 @@ pip install python-dotenv
 GENIUS_API_KEY=paste-your-api-key-here
 ```
 
+### Development Blog Posts:
+- Feb 2024: [Lyric Scraping with Python](https://ambershakespeare.wordpress.com/2024/02/04/lyric-scraping-with-python/)
+- Oct 2024: [Lyric Scraping: Getting the Song List](https://ambershakespeare.wordpress.com/2024/10/16/lyric-scraping-getting-the-song-list/)
+
+
 ---
 DISCLAIMER:
 This project is an educational exercise and proof of concept for web scraping using Python. The purpose of this project is to demonstrate the process of accessing and extracting publicly available information from a specific website that provides lyrics.
 
 Usage Considerations:
-1. **Expletives and Content: This tool may extract lyrics that include expletives or mature content. As the game developer, you are responsible for filtering and presenting statistics in a manner consistent with the intended audience of your game.
+1. Expletives and Content: This tool may extract lyrics that include expletives or mature content. As the game developer, you are responsible for filtering and presenting statistics in a manner consistent with the intended audience of your game.
 2. Ownership Disclaimer: The lyrics retrieved by this tool are not owned by the developer. They remain the property of their respective copyright holders. The lyrics obtained from this tool are utilised solely for generating statistics within the context of the game. Users will see statistical insights derived from the lyrics rather than the lyrics themselves.
 
 By using this project, you acknowledge that the lyrics remain the property of their respective copyright holders and agree to abide by the terms of the MIT License.
